@@ -1,0 +1,14 @@
+Please create these accounts before hitting Amount Transfer :
+
+{
+	"balance": 1000,
+	"accountId": "Id-123"
+}
+
+{
+	"balance": 2000,        "accountId": "Id-124"
+}
+
+
+
+The same accounts are used in DB script.

@@ -1,0 +1,24 @@
+server:
+  port: 18080
+spring:
+  application: challenge
+  profiles.active:
+    - test
+    - default
+  datasource:
+    url: jdbc:h2:~/challengeDb;DB_CLOSE_ON_EXIT=FALSE;AUTO_SERVER=TRUE
+    username: sa
+    password:
+    driver: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      path: /h2
+      enabled: true
+  ResponseMessages:
+   accountIdDoesNotExists: Sender/Receiver Account Id does not exists
+   amountGreaterThanBalance: Amount is greater than balance
+   transferFailed:  Failed to transfer amount 
+   sendersTransferDescription: Amount is debited successfully
+   receiversTransferDescription: Amount is credited successfully

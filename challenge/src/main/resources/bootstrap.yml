@@ -1,0 +1,4 @@
+spring:
+  application: challenge
+  profiles:
+    active: test
